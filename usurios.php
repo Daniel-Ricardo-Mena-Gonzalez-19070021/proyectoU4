@@ -4,7 +4,7 @@ echo "<br>conectandonos via OBDC con DSN</br>";
 $conexion = odbc_connect("baseprueba", "root","") or die(exit("error en la conexion"));
 
 echo "<P>Conexion exitosa de BD por ODBC</P>";
-
+echo "<P>hola mundo</P>";
 $sql = "select * from accounts";
 
 $resultados = odbc_exec($conexion,$sql) or die(exit("error al ejecutar la consulta"));
