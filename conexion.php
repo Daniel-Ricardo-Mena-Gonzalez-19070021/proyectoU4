@@ -19,6 +19,7 @@ $conex_msql = new mysqli("localhost", "root","","performance_schema",3306);
 if($conex_msql->connect_errno)
 {
     echo "error al conectarse al gestor MYSQL";
+    echo "error al conectarse a MYSQL";
     echo "Error encontrado: " . $conex_msql->connect_error;
 
 }
